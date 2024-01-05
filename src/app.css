@@ -1,0 +1,74 @@
+/* 
+  .notFound{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+/* .form{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form input{
+  width: 80%;
+  padding: 10px;
+  margin: 10px;
+} */
+/* 
+.table{
+  width: 80%;
+}
+
+.photoProfileContainer , .InfoHeader{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  align-items: center;
+
+
+}
+.photoProfileContainer img{
+width: 150px;
+height: 150px;
+border-radius: 50%;
+border: 2px solid rgb(19, 183, 216);
+}
+
+.MoreDetails{
+  display: flex ; 
+  width: 100%;
+  justify-content: center;
+  gap: 20px;
+}  */
+
+.form-row{
+  display: flex !important;
+
+}
+.form-group{
+  width: 100% !important; 
+
+}
+body{
+  position: relative;
+}
+.footer{
+  position: absolute;
+  bottom:  0;
+}
+.cards{
+  display : flex ; 
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding:20px ; 
+
+}
+.card{
+  width : fit-content ;
+}
