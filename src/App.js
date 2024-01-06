@@ -6,10 +6,10 @@ import React ,{ useState  }  from "react";
 import {Route , Routes } from 'react-router-dom';
 import About from "./components/About";
 import Home from "./components/Home";
-import Login from "./components/Login";
 import Contact from "./components/Contact";
 import UpdateUser from "./components/UpdateUser";
 import ContactUpdate from "./components/ContactUpdate";
+import Voyage from "./components/Voyage";
 function App() {
 
   return (
@@ -20,15 +20,11 @@ function App() {
         <Route index path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/voyage" element={<Voyage />} />
         <Route path="/updateUser/:id" element={<UpdateUser />} />
         <Route path="/updateContact/:matriculeId" element={<ContactUpdate />} />
         <Route path="/*" element={<h2 className="notFound">404 Not Found</h2>} />
       </Routes>
-      
-      
-      
-      
       <Footer />
 </div>
 

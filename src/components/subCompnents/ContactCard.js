@@ -11,7 +11,7 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import { red } from '@mui/material/colors';
 import {Link} from "react-router-dom"
-import {  useDispatch } from 'react-redux'
+import {useDispatch} from 'react-redux'
 import {deleteContact} from "../../state/ListContactSlice/listContact.js"
 
 // import FavoriteIcon from '@mui/icons-material/Favorite';
@@ -74,7 +74,7 @@ export default function ContactCard(props) {
       </CardContent>
       <CardActions disableSpacing>
         <IconButton aria-label="add to favorites">
-        <Link to={`/updateContact/${props.matricule}`}><EditIconnit /></Link>
+        <Link to={`/updateContact/${props.matricule}`}><EditIcon /></Link>
         </IconButton>
         <IconButton aria-label="share">
         <button class="btn" onClick = { ()=> dispatch(deleteContact(props.matricule))} ><DeleteIcon /> </button>
@@ -108,17 +108,6 @@ export default function ContactCard(props) {
 }
 
 
-
-
-
-{/* <div class="card">
-<div class="card-body">
-  <h4 class="card-title">{props.name +" "+ props.lastName}</h4>
-  <p class="card-text"> <p>#{props.matricule} </p> <p>Email : {props.email} </p> <p>telephone : {props.telephone} </p> </p>
-  <Link to={`/updateContact/${props.matricule}`} class="btn btn-primary">Update</Link>
-  <button class="btn btn-danger" onClick = { ()=> dispatch(deleteContact(props.matricule))} >Delete</button>
-</div>
-</div> */}
 
 
 

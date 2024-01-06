@@ -15,7 +15,7 @@ const listContactSlice  = createSlice({
         } , 
         deleteContact : (state  , action)=>{
             let matricule = action.payload
-            state.contacts = state.contacts.filter((contact)=> contact.matricule !==  matricule)
+            state.contacts = state.contacts.filter((contact)=> contact.matricule !== matricule)
         }, 
         updateContact : (state , action)=>{
             let matricule  = action.payload.matricule

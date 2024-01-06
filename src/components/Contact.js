@@ -20,7 +20,7 @@ const contactList  = useSelector((state)=> state.listContact.contacts )
 <center>
   <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
   <Grid item xs={6}>
-  <TextField onChange={(e)=> setMatricule(e.target.value)} style={{width:"100%"}} margin="dense"  id="outlined-basic" label="Matricule" variant="outlined"  />
+  <TextField onChange={(e)=> setMatricule(e.target.value)} type='number' style={{width:"100%"}} margin="dense"  id="outlined-basic" label="Matricule" variant="outlined"  />
   </Grid>
   <Grid item xs={6}>
   <TextField onChange={(e)=> setTelephone(e.target.value)} style={{width:"100%"}} margin="dense" id="outlined-basic" label="Telephone" variant="outlined"  />
@@ -49,7 +49,6 @@ const contactList  = useSelector((state)=> state.listContact.contacts )
     }))
   }} >Add Contact</button>
   <button class="btn btn-danger" onClick={ ()=> dispatch(deleteAll()) } >Vide</button>
-
 
 
 <div className="cards">
