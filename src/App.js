@@ -25,7 +25,7 @@ function App() {
         <Route path="/updateContact/:matriculeId" element={<ContactUpdate />} />
         <Route path="/*" element={<h2 className="notFound">404 Not Found</h2>} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
 </div>
 
     </>
